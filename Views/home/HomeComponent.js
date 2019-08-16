@@ -10,11 +10,12 @@ import styles from './home.style';
 export default class HomeComponent extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <View style={styles.containerImage}>
-          <Image source={require('../../assets/img/accueil_img.jpg')}
-            style={styles.mainImage} />
-        </View>
+        <View style={styles.container}>
+          <View style={styles.containerImage}>
+            <Image source={require('../../assets/img/vietnam_restaurant_300.jpg')}
+                   style={styles.mainImage}/>
+          </View>
+    
         <View style={styles.containerTitre}>
           <Text style={[styles.mainTitle]}>Restaurant Soleil  </Text>
           <Text style={[styles.mainTitle]}>2 rue d'along 57070 Metz, France</Text>
