@@ -12,7 +12,7 @@ export default class HomeComponent extends React.Component {
     return (
         <View style={styles.container}>
           <View style={styles.containerImage}>
-            <Image source={require('../../assets/img/accueil_img.jpg')}
+            <Image source={require('../../assets/img/vietnam_restaurant_300.jpg')}
                    style={styles.mainImage}/>
           </View>
           <View style={styles.containerTitre}>
