@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     borderRadius: 7,
   },
   textButtonCommand: {
-    color: '#dff0ed',
+    color: '#eaf05e',
     fontSize: 18,
     textTransform: 'uppercase',
   },
