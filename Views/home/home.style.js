@@ -10,15 +10,45 @@ const styles = StyleSheet.create({
   },
   containerTitre: {
     flex: 1,
-    backgroundColor: '#000000',
-    alignItems: 'center',
+    backgroundColor: '#1a1a1a',
+    paddingTop: 10,
   },
   mainImage: {
     height: '100%',
     width: '100%',
   },
-  mainTitle: {
-    color: '#e5e5e5',
+  mainTextTitleWhite: {
+    color: '#c0d1ce',
+  },
+  h1Titre: {
+    fontSize: 30,
+    textTransform: 'uppercase',
+  },
+  address: {
+    fontSize: 14,
+  },
+  openTitle: {
+    marginTop: 10,
+    fontSize: 18,
+  },
+  buttonCommandContainer: {
+//    flex: 1,
+    marginTop: 40,
+    alignItems: 'center',
+  },
+  buttonCommand: {
+    backgroundColor: '#c61e1e',
+    paddingTop: 8,
+    paddingBottom: 10,
+    paddingLeft: 40,
+    paddingRight: 40,
+    textAlign: 'center',
+    borderRadius: 7,
+  },
+  textButtonCommand: {
+    color: '#dff0ed',
+    fontSize: 18,
+    textTransform: 'uppercase',
   },
 });
 
