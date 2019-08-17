@@ -12,6 +12,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#1a1a1a',
     paddingTop: 10,
+    padding: 10,
   },
   mainImage: {
     height: '100%',
@@ -27,13 +28,18 @@ const styles = StyleSheet.create({
   address: {
     fontSize: 14,
   },
+  separator: {
+    borderBottomColor: 'white',
+    borderBottomWidth: 1,
+    marginTop: 20,
+    width: 80,
+  },
   openTitle: {
-    marginTop: 10,
+    marginTop: 5,
     fontSize: 18,
   },
   buttonCommandContainer: {
-//    flex: 1,
-    marginTop: 40,
+    marginTop: 50,
     alignItems: 'center',
   },
   buttonCommand: {

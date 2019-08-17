@@ -1,10 +1,9 @@
 import React from 'react';
 import {
-  View,
   Image,
-  Button,
   Text,
   TouchableOpacity,
+  View,
 } from 'react-native';
 
 import styles from './home.style';
@@ -32,6 +31,9 @@ export default class HomeComponent extends React.Component {
               d'along 57070 Metz, France</Text>
             <Text style={[styles.mainTextTitleWhite, styles.address]}>06 28 65
               56 65</Text>
+            <View
+                style={styles.separator}
+            />
             <Text style={[
               styles.mainTextTitleWhite,
               styles.openTitle]}>HORAIRES</Text>
