@@ -8,11 +8,7 @@ import {
 
 import styles from './home.style';
 
-export default class HomeComponent extends React.Component {
-  onCommand() {
-    console.log('On Command');
-  };
-
+class HomeComponent extends React.Component {
   render() {
     return (
 
@@ -42,9 +38,10 @@ export default class HomeComponent extends React.Component {
 
             <View style={styles.buttonCommandContainer}>
 
-              <TouchableOpacity onPress={this.onCommand}
-                                style={styles.buttonCommand}
-                                activeOpacity={0.7}
+              <TouchableOpacity
+                  onPress={() => this.props.navigation.navigate('MenuRoute')}
+                  style={styles.buttonCommand}
+                  activeOpacity={0.7}
               >
                 <Text style={styles.textButtonCommand}>Commander</Text>
               </TouchableOpacity>
@@ -54,3 +51,5 @@ export default class HomeComponent extends React.Component {
     );
   }
 }
+
+export default HomeComponent;
