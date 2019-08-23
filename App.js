@@ -1,6 +1,6 @@
 import React from 'react';
 import { createAppContainer } from 'react-navigation';
-import AppNavigator from './navigation/routesNavigations';
+import AppNavigator from './app/navigation/routesNavigations';
 
 const AppContainer = createAppContainer(AppNavigator);
 
