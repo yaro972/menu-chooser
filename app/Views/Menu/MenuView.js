@@ -4,6 +4,7 @@ import {
   ScrollView,
   View,
 } from 'react-native';
+import FadeIn from '../../Animations/fadeIn';
 import { getMenuList } from '../../API/menuApi';
 import MenuComponent from '../../Components/MenuComponent/MenuComponent';
 
@@ -25,6 +26,7 @@ class MenuView extends React.Component {
         loaded: true,
       });
     });
+
 
   }
 
@@ -69,7 +71,9 @@ class MenuView extends React.Component {
             marginLeft: 5,
             marginRight: 5,
           }}>
-            {this._showMenuItem()}
+            <FadeIn>
+              {this._showMenuItem()}
+            </FadeIn>
           </View>
       );
     }

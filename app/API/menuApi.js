@@ -1,7 +1,7 @@
 import data from '../Helpers/menuList';
 
 async function asyncCall(callback) {
-  const delayInMilliseconds = 5000; //1 second
+  const delayInMilliseconds = 1000; //1 second
 
   setTimeout(function() {
     callback(data);
