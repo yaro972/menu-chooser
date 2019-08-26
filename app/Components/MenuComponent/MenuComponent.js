@@ -11,7 +11,9 @@ function MenuComponent({ id, menuItem, menuImage, click }) {
   return (
       <TouchableOpacity
           style={styles.container}
-          onPress={() => { click(id);}}
+          onPress={() => {
+            click(id);
+          }}
       >
         <Image source={{ uri: menuImage }}
                style={styles.menuImage}/>
