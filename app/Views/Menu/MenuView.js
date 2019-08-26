@@ -7,6 +7,7 @@ import {
 import FadeIn from '../../Animations/fadeIn';
 import { getMenuList } from '../../API/menuApi';
 import MenuComponent from '../../Components/MenuComponent/MenuComponent';
+import styles from './MenuView.styles';
 
 class MenuView extends React.Component {
   constructor(props) {
@@ -27,15 +28,11 @@ class MenuView extends React.Component {
       });
     });
 
-
   }
 
   render() {
     return (
-        <ScrollView contentContainerStyle={{
-          flexGrow: 1,
-          backgroundColor: '#1a1a1a',
-        }}>
+        <ScrollView contentContainerStyle={styles.container}>
           {this._showLoader()}
         </ScrollView>
     );
@@ -47,7 +44,9 @@ class MenuView extends React.Component {
           <MenuComponent
               menuItem={el.name}
               menuImage={el.img}
-              key={el.id}/>
+              key={el.id}
+              click={this._onClick}
+          />
       );
     });
   }
@@ -55,22 +54,13 @@ class MenuView extends React.Component {
   _showLoader() {
     if (!this.state.loaded) {
       return (
-          <View style={{
-            flex: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
-            flexDirection: 'column',
-          }}>
+          <View style={styles.loader}>
             <ActivityIndicator size="large" color="#ffff00"/>
           </View>
       );
     } else {
       return (
-          <View style={{
-            flex: 1,
-            marginLeft: 5,
-            marginRight: 5,
-          }}>
+          <View style={styles.menuEntry}>
             <FadeIn>
               {this._showMenuItem()}
             </FadeIn>
@@ -78,6 +68,10 @@ class MenuView extends React.Component {
       );
     }
   };
+
+  _onClick(el) {
+    console.log(el);
+  }
 }
 
 export default MenuView;

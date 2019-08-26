@@ -20,7 +20,7 @@ class FadeIn extends React.Component {
         this.state.positionLeft,
         {
           toValue: 0,
-          duration: 10000,
+          duration: 90000,
         },
     ).start();
   }
