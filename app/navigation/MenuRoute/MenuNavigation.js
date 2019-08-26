@@ -8,7 +8,6 @@ const MenuRoute = {
     headerStyle: { backgroundColor: '#c61e1e' },
     headerTitleStyle: { color: '#eaf05e' },
   },
-    }
-;
+};
 
 export default MenuRoute;

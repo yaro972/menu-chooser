@@ -7,7 +7,6 @@ import {
 
 function dishesComponent() {
   return (
-
       <View style={{
         flex: 1,
         borderStyle: 'solid',

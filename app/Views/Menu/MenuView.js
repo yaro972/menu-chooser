@@ -1,75 +1,79 @@
 import React from 'react';
 import {
+  ActivityIndicator,
   ScrollView,
   View,
 } from 'react-native';
+import { getMenuList } from '../../API/menuApi';
 import MenuComponent from '../../Components/MenuComponent/MenuComponent';
 
 class MenuView extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [],
+      loaded: false,
+    };
+    this._showLoader = this._showLoader.bind(this);
+  }
+
+  componentDidMount() {
+    getMenuList().then((lMenu) => {
+
+      this.setState({
+        data: lMenu,
+        loaded: true,
+      });
+    });
+
+  }
 
   render() {
-
     return (
-        <ScrollView style={{
-          flex: 1,
-          paddingLeft: 5,
-          paddingRight: 5,
+        <ScrollView contentContainerStyle={{
+          flexGrow: 1,
           backgroundColor: '#1a1a1a',
         }}>
-          <View style={{ flex: 1 }}>
-            {this._showMenuItem()}
-          </View>
+          {this._showLoader()}
         </ScrollView>
     );
   }
 
   _showMenuItem() {
-    const listMenu = {
-      data: [
-        {
-          id: 0,
-          name: 'Entrées',
-          img: 'https://via.placeholder.com/100',
-        },
-        {
-          id: 1,
-          name: 'Plats principal',
-          img: 'https://via.placeholder.com/100',
-        },
-        {
-          id: 2,
-          name: 'Desserts',
-          img: 'https://via.placeholder.com/100',
-        },
-        {
-          id: 3,
-          name: 'Menus',
-          img: 'https://via.placeholder.com/100',
-        },
-        {
-          id: 4,
-          name: 'Spécialités',
-          img: 'https://via.placeholder.com/100',
-        },
-        {
-          id: 6,
-          name: 'Plats du jour',
-          img: 'https://via.placeholder.com/100',
-        },
-      ],
-    };
-
-    return listMenu.data.map(el => {
+    return this.state.data.map(el => {
       return (
           <MenuComponent
               menuItem={el.name}
               menuImage={el.img}
               key={el.id}/>
       );
-
     });
   }
 
+  _showLoader() {
+    if (!this.state.loaded) {
+      return (
+          <View style={{
+            flex: 1,
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'column',
+          }}>
+            <ActivityIndicator size="large" color="#ffff00"/>
+          </View>
+      );
+    } else {
+      return (
+          <View style={{
+            flex: 1,
+            marginLeft: 5,
+            marginRight: 5,
+          }}>
+            {this._showMenuItem()}
+          </View>
+      );
+    }
+  };
 }
 
 export default MenuView;

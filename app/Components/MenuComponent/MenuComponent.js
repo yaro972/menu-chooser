@@ -2,12 +2,13 @@ import React from 'react';
 import {
   Image,
   Text,
+  TouchableOpacity,
   View,
 } from 'react-native';
 
 function MenuComponent({ menuItem, menuImage }) {
   return (
-      <View style={{
+      <TouchableOpacity style={{
         flex: 1,
         borderStyle: 'solid',
         borderBottomWidth: 1,
@@ -29,7 +30,7 @@ function MenuComponent({ menuItem, menuImage }) {
         }}>
           <Text style={{ color: '#c0d1ce', fontSize: 18 }}>{menuItem}</Text>
         </View>
-      </View>
+      </TouchableOpacity>
   );
 }
 
