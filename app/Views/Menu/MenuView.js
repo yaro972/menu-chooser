@@ -45,6 +45,7 @@ class MenuView extends React.Component {
               menuItem={el.name}
               menuImage={el.img}
               key={el.id}
+              id={el.id}
               click={this._onClick}
           />
       );

@@ -1,4 +1,6 @@
-const styles = {
+import { StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
     backgroundColor: '#1a1a1a',
@@ -14,6 +16,6 @@ const styles = {
     marginLeft: 5,
     marginRight: 5,
   },
-};
+});
 
 export default styles;

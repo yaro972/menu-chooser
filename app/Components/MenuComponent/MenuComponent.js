@@ -5,30 +5,19 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import styles from './MenuComponent.styles';
 
-function MenuComponent({ menuItem, menuImage }) {
+function MenuComponent({ id, menuItem, menuImage, click }) {
   return (
-      <TouchableOpacity style={{
-        flex: 1,
-        borderStyle: 'solid',
-        borderBottomWidth: 1,
-        borderColor: '#c0d1ce',
-        flexDirection: 'row',
-        justifyContent: 'space-around',
-        marginTop: 5,
-        marginBottom: 5,
-        paddingTop: 5,
-        paddingBottom: 10,
-      }}>
+      <TouchableOpacity
+          style={styles.container}
+          onPress={() => { click(id);}}
+
+      >
         <Image source={{ uri: menuImage }}
-               style={{ width: 120, height: 120, flex: 1 }}/>
-        <View style={{
-          flex: 2, paddingLeft: 25,
-          justifyContent: 'center',
-          flexDirection: 'column',
-          textAlign: 'center',
-        }}>
-          <Text style={{ color: '#c0d1ce', fontSize: 18 }}>{menuItem}</Text>
+               style={styles.menuImage}/>
+        <View style={styles.textContainer}>
+          <Text style={styles.textMenu}>{menuItem}</Text>
         </View>
       </TouchableOpacity>
   );
