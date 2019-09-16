@@ -6,8 +6,7 @@ import {
   View,
 } from 'react-native';
 import FadeIn from '../../Animations/fadeIn';
-import { getMenuList } from '../../API/menuApi';
-import MenuComponent from '../../Components/MenuComponent/MenuComponent';
+import {getMain} from '../../API'
 import styles from './MenuView.styles';
 
 class MenuView extends React.Component {
@@ -21,13 +20,14 @@ class MenuView extends React.Component {
   }
 
   componentDidMount() {
-    getMenuList().then((lMenu) => {
+    /*getMain()
+        .then((lMenu) => {
 
       this.setState({
         data: lMenu,
         loaded: true,
       });
-    });
+    });  */
 
   }
 
