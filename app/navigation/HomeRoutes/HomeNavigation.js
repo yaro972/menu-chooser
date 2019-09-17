@@ -1,10 +1,10 @@
-import HomeComponent from '../../Views/home/HomeComponent';
+import {Home} from "../../Views/home";
 
-const Home = {
-  screen: HomeComponent,
+const HomeRoute = {
+  screen: Home,
   navigationOptions: {
     header: null,
   },
 };
 
-export default Home;
+export default HomeRoute;

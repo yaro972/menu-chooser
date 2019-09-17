@@ -2,11 +2,11 @@ import {
   createAppContainer,
   createStackNavigator,
 } from 'react-navigation';
-import Home from './HomeRoutes/HomeNavigation';
+import HomeRoute from './HomeRoutes/HomeNavigation';
 import MenuRoute from './MenuRoute/MenuNavigation';
 
 const AppNavigator = createStackNavigator({
-  Home,
+  HomeRoute,
   MenuRoute,
 });
 
