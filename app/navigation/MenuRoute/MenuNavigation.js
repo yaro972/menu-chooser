@@ -1,7 +1,7 @@
-import MenuView from '../../Views/Menu/MenuView';
+import {Menu} from '../../Views/Menu';
 
 const MenuRoute = {
-  screen: MenuView,
+  screen: Menu,
   navigationOptions: {
     title: 'Au nem d\'argent - Menu',
     headerTruncatedBackTitle: `Menu`,

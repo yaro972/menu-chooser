@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1568725842705" clover="3.2.0">
+  <project timestamp="1568725842706" name="All files">
+    <metrics statements="13" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4" elements="19" coveredelements="15" complexity="0" loc="13" ncloc="13" packages="2" files="7" classes="7"/>
+    <package name="Views.home">
+      <metrics statements="12" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="4"/>
+      <file name="CommandButton.js" path="/mnt/c/Users/thierry.aronoff/WebstormProjects/menu-chooser/app/Views/home/CommandButton.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="ContentHome.js" path="/mnt/c/Users/thierry.aronoff/WebstormProjects/menu-chooser/app/Views/home/ContentHome.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="HeaderHome.js" path="/mnt/c/Users/thierry.aronoff/WebstormProjects/menu-chooser/app/Views/home/HeaderHome.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+      </file>
+      <file name="HomeComponent.js" path="/mnt/c/Users/thierry.aronoff/WebstormProjects/menu-chooser/app/Views/home/HomeComponent.js">
+        <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+      </file>
+      <file name="home.style.js" path="/mnt/c/Users/thierry.aronoff/WebstormProjects/menu-chooser/app/Views/home/home.style.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+      <file name="index.js" path="/mnt/c/Users/thierry.aronoff/WebstormProjects/menu-chooser/app/Views/home/index.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="assets.img">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="vietnam_restaurant_300.jpg" path="/mnt/c/Users/thierry.aronoff/WebstormProjects/menu-chooser/app/assets/img/vietnam_restaurant_300.jpg">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

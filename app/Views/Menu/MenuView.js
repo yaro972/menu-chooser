@@ -33,9 +33,12 @@ class MenuView extends React.Component {
 
   render() {
     return (
-        <ScrollView contentContainerStyle={styles.container}>
-          {this._showLoader()}
-        </ScrollView>
+        <View>
+          <MenuView/>
+          <ScrollView contentContainerStyle={styles.container}>
+            {this._showLoader()}
+          </ScrollView>
+        </View>
     );
   }
 
