@@ -3,7 +3,6 @@
     "name": "React native Restaurant Menu",
     "slug": "menu-chooser",
     "privacy": "public",
-    "sdkVersion": "34.0.0",
     "platforms": [
       "ios",
       "android",
